@@ -1,4 +1,4 @@
-**Project Name: VideoTranslateTTS**
+**Project Name: grabber-simple-amazon-items**
 
 ## Dependencies
 
