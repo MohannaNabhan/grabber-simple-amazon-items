@@ -27,10 +27,13 @@ async function makeRequest(url) {
     const response = await axios.get(url);
 
     const $ = cheerio.load(response.data);
+    console.log('------------------------------------------------------------')
     console.log('Name:', $('#productTitle').text())
+    console.log('------------------------------------------------------------')
     console.log('Price:', $('#corePrice_feature_div > div > div > span.a-price.aok-align-center > span:nth-child(2)').text())
+    console.log('------------------------------------------------------------')
     console.log('Desc:', $('#feature-bullets').text())
-
+    console.log('------------------------------------------------------------')
     /*
         fs.writeFile('exit.txt', response.data, (err) => {
             if (err) throw err;
